@@ -1,0 +1,493 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#plane {
+  background: linear-gradient(rgba(40, 58, 90, 0.6), #1f2d57),
+    url("./assets/img/images/pattern.png") fixed center center;
+  height: 40vh;
+}
+.headingMsg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 30vh;
+  width: 65%;
+  left: 18%;
+  overflow: visible;
+}
+.animatedMsg {
+  position: relative;
+  color: white;
+  overflow: visible;
+  font-size: 6vw;
+  font-family: "IM Fell English", sans-serif;
+  text-align: center;
+  opacity: 1;
+}
+.animation {
+  height: 10vh;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+}
+.paper-plane {
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+.Outtrigger1 {
+  overflow: visible;
+  position: relative;
+  top: 25%;
+  left: 30%;
+}
+.Outanimation {
+  z-index: 2;
+}
+
+/* Glowing stegnography heading */
+.fancy {
+  font-weight: 600;
+  color: white;
+}
+.fancy span {
+  color: white;
+  transition: all 2s ease;
+  text-shadow: 7px 7px 5px black;
+}
+.fancy span.fade {
+  opacity: 1;
+  color: white;
+  text-shadow: 5px 4px 5px #1f2d57;
+}
+/*  Glowing stegnography heading Over */
+
+/* ======Service Section Block ======*/
+.row .icon-box a {
+  display: block;
+}
+
+/*====== Sample Encryption Block ======*/
+[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type="radio"] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type="radio"]:checked + img {
+  outline: 2px solid red;
+  padding: 5px;
+}
+.warningMsg {
+  text-align: center;
+  margin-bottom: 5vh;
+  color: #1f2d57;
+}
+.alertMsg {
+  display: none;
+  text-align: center;
+  color: red;
+  font-size: 12px;
+}
+.alertPass {
+  display: none;
+  text-align: center;
+  color: red;
+  font-size: 12px;
+}
+#inputPass {
+  margin: 5px;
+}
+#sample-img-area .section-title h2 {
+  font-size: 22px;
+}
+
+/* Services Section Css */
+#customImage #inputMsg {
+  margin-top: 15px;
+}
+#inputMsg input {
+  padding: 6px 12px;
+  height: 44px;
+  width: 400px;
+  font-size: 14px;
+  border: 0.2px solid #283a5a;
+  border-radius: 8%;
+  box-shadow: 5px 5px 3px #283a5a;
+  margin-bottom: 4px;
+}
+#inputMsg input:hover {
+  box-shadow: 5px 8px 10px #283a5a;
+}
+#inputPass input {
+  padding: 6px 12px;
+  height: 44px;
+  font-size: 14px;
+  border: 0.2px solid #283a5a;
+  border-radius: 8%;
+  box-shadow: 5px 5px 3px #283a5a;
+  margin-bottom: 4px;
+}
+#inputPass input:hover {
+  box-shadow: 5px 8px 10px #283a5a;
+}
+.c-button {
+  display: block;
+  outline: none;
+  margin: auto;
+  margin-top: 15px;
+  color: #283a5a;
+  border-radius: 30px;
+  padding: 6px 25px 7px 25px;
+  transition: 0.3s;
+  font-size: 14px;
+  border: 2px solid #283a5a;
+  font-weight: 600;
+  background: white;
+  box-shadow: 5px 5px 18px #283a5a;
+}
+.icon-box .c-button {
+  width: 150px;
+  display: block;
+  outline: none;
+  margin: auto;
+  margin-top: 30px;
+  color: #283a5a;
+  border-radius: 30px;
+  padding: 6px 10px 7px 10px;
+  transition: 0.3s;
+  border: 2px solid #283a5a;
+  font-weight: 600;
+  background: white;
+  box-shadow: 5px 5px 18px #283a5a;
+}
+.sidhu .c-button:hover {
+  background: #283a5a;
+  color: white;
+}
+.services .icon-box .c-button:hover {
+  background: #283a5a;
+  box-shadow: 8px 15px 28px #283a5a;
+  color: #47b2e4;
+}
+.previewImage {
+  display: none;
+  margin: 10px auto;
+}
+.choose-file {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  color: black;
+  outline: none;
+}
+.choose-file::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.choose-file::before {
+  content: "Select Image File";
+  width: 68%;
+  margin: auto;
+  color: black;
+  display: block;
+  background: white;
+  border: 2px solid #283a5a;
+  border-radius: 30px;
+  box-shadow: 3px 3px 12px #283a5a;
+  padding: 5px 38px;
+  text-shadow: 1px 1px #fff;
+  font-weight: 600;
+  font-size: 12pt;
+}
+.choose-file:hover::before {
+  border-color: black;
+  box-shadow: 8px 8px 15px #283a5a;
+}
+@media (max-width: 500px) {
+  #inputMsg input {
+    padding: 6px 12px;
+    height: 44px;
+    width: 250px;
+    font-size: 14px;
+    border: 0.2px solid #283a5a;
+    border-radius: 8%;
+    box-shadow: 5px 5px 3px #283a5a;
+    margin-bottom: 4px;
+  }
+}
+#decryptionSec [type="Password"] {
+  margin-top: 15px;
+}
+.show-image {
+  display: none;
+  height: 250px;
+  width: auto;
+  margin: auto;
+  margin-bottom: 15px;
+  border: 2px solid #283a5a;
+  padding: 3px;
+}
+.show-image:hover {
+  transform: scale(0.98);
+  box-shadow: 0 0 20px 0 #283a5a;
+}
+.download-btn-section {
+  padding: 7px 0 10px 0;
+}
+.download-btn-c input {
+  display: block;
+  outline: none;
+  margin: auto;
+  background: #283a5a;
+  color: white;
+
+  border-radius: 30px;
+  padding: 6px 25px 7px 25px;
+  transition: 0.3s;
+  font-size: 18px;
+  border: 2px solid #283a5a;
+  font-weight: 600;
+
+  box-shadow: 0px 5px 7px #283a5a;
+}
+.download-btn-c input:hover {
+  color: #283a5a;
+  background: #f2f2f2;
+  box-shadow: 2px 5px 7px #3c598a;
+}
+.loadingCube {
+  display: none;
+  top: -30px;
+  left: 90px;
+  margin: auto;
+  font-size: 24px;
+  height: 1em;
+  width: 1em;
+  position: relative;
+  transform: rotatex(30deg) rotatey(45deg);
+  transform-style: preserve-3d;
+  animation: cube-spin 1.5s infinite ease-in-out alternate;
+}
+.side {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform-style: preserve-3d;
+}
+.side::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #283a5a;
+  transform: translatez(0.5em);
+  animation: cube-explode 1.5s infinite ease-in-out;
+  opacity: 0.7;
+}
+.side:nth-child(1) {
+  transform: rotatey(90deg);
+}
+.side:nth-child(2) {
+  transform: rotatey(180deg);
+}
+.side:nth-child(3) {
+  transform: rotatey(270deg);
+}
+.side:nth-child(4) {
+  transform: rotatey(360deg);
+}
+.side:nth-child(5) {
+  transform: rotatex(90deg);
+}
+.side:nth-child(6) {
+  transform: rotatex(270deg);
+}
+@keyframes cube-spin {
+  0% {
+    transform: rotatex(30deg) rotatey(45deg);
+  }
+  100% {
+    transform: rotatex(30deg) rotatey(405deg);
+  }
+}
+@keyframes cube-explode {
+  0% {
+    transform: translatez(0.5em);
+  }
+  50% {
+    transform: translatez(0.75em);
+  }
+  100% {
+    transform: translatez(0.5em);
+  }
+}
+
+/* pop up */
+.beforepopup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2%;
+  padding: 5px;
+  border: 2px solid #283a5a;
+  box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.3);
+  width: 604px;
+  z-index: 10;
+  display: none;
+}
+#popup {
+  position: relative;
+  border-radius: 2%;
+  padding: 50px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  background: rgb(255, 255, 255);
+}
+.active1 {
+  filter: blur(2px);
+}
+.beforepopupDrum {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2%;
+  padding: 5px;
+  border: 2px solid #283a5a;
+  box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.3);
+  width: 50vw;
+  height: 50vh;
+  z-index: 10;
+}
+#popupDrum {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 2%;
+  padding: 10px;
+  text-align: center;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  background-color: #1f2d57;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.beforepopupDrum h2 {
+  margin-top: 30px;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 1px #47b2e4;
+  
+}
+.w {
+  background-image: url("./assets/img/images/tom1.png");
+}
+.a {
+  background-image: url("./assets/img/images/tom2.png");
+}
+.s {
+  background-image: url("./assets/img/images/tom3.png");
+}
+.d {
+  background-image: url("./assets/img/images/tom4.png");
+}
+.j {
+  background-image: url("./assets/img/images/snare.png");
+}
+.k {
+  background-image: url("./assets/img/images/crash.png");
+}
+.l {
+  background-image: url("./assets/img/images/kick.png");
+}
+.beforepopupDrum .set {
+  margin: 5% auto;
+}
+.pressedDrum {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+.beforepopupDrum .drum {
+  outline: none;
+  position: relative;
+  border: 5px solid #404b69;
+  font-size: 2.5rem;
+  font-family: "Arvo", cursive;
+  font-weight: 400;
+  color: #47b2e4;
+  text-shadow: 4px 0 black;
+  border-radius: 10%;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+@media (max-width: 900px) {
+  .beforepopupDrum .drum {
+    width: 60px;
+    height: 60px;
+  }
+}
+.waitingMsg {
+  display: none;
+  font-weight: 600;
+}
+.drumBtn {
+  outline: none;
+  margin: auto;
+  margin-top: 15px;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 6px 15px 7px 15px;
+  transition: 0.3s;
+  font-size: 14px;
+  border: 2px solid #283a5a;
+  font-weight: 600;
+  background: black;
+  box-shadow: 5px 5px 18px #283a5a;
+}
+.drumBtn:focus {
+  outline: none;
+  color: #47b2e4;
+  border: 2px solid #47b2e4;
+}
+.drumBtn:hover {
+  outline: none;
+  color: #47b2e4;
+  border: 2px solid #47b2e4;
+  box-shadow: 5px 5px 28px #283a5a;
+}
+.closeIconDrum {
+  color: #47b2e4;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 36px;
+  text-shadow: 4px 1px black;
+}
+
